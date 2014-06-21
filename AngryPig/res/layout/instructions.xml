@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/options_background"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:weightSum="100"
+   
+  >
+
+
+<ScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/options_foreground"
+    android:layout_weight="10"
+    >
+    <LinearLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/instructionsText"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="30"
+            android:layout_gravity="center"
+          
+            android:typeface="sans"
+            android:textColor="@android:color/black"
+            android:textSize="25dp"
+            android:contentDescription="@string/instructionsTextDescription"
+            android:text="@string/instructionsText" >
+        </TextView>
+        
+        <ImageButton
+    android:id="@+id/instructionsMenuBackButton"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@null"
+    android:contentDescription="@string/instructionsMenuBackButtonDescription"
+    android:src="@drawable/instructions_back_button" />
+        
+    </LinearLayout>
+</ScrollView>
+<View 
+    android:layout_weight="44"
+        android:layout_width="0dp"
+        android:layout_height="0dp"></View>
+
+
+
+
+<View 
+    android:layout_weight="30"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+     
+        />
+</LinearLayout>

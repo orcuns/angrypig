@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/menupig"
+    android:orientation="vertical" >
+
+    <View 
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        />
+    
+    <ImageButton
+        android:id="@+id/menuPlayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:contentDescription="@string/menuPlayButtonDescription"
+        android:src="@drawable/play_button"     
+        
+         />
+
+    <ImageButton
+        android:id="@+id/menuOptionsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:contentDescription="@string/menuOptionsButtonDescription"
+        android:src="@drawable/options_button" />
+    
+     <ImageButton
+         android:id="@+id/menuInstructionsButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:background="@null"
+         android:contentDescription="@string/menuInstructionsButtonDescription"
+         android:src="@drawable/instructions_button"
+         
+          />
+     <ImageButton
+         android:id="@+id/menuHighScoresButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:background="@null"
+         android:contentDescription="@string/highScoresTextDescription"
+         android:src="@drawable/score_button"
+         android:layout_marginBottom="140dp"
+          />
+     
+     <View 
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        />
+
+     
+     
+</LinearLayout>
+
+

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/options_background"
+    android:orientation="vertical"
+    android:padding="13dp"
+    android:weightSum="100"
+ 
+  >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="78"
+        android:background="@drawable/options_foreground"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/optionsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:contentDescription="@string/optionsTitleDescription"
+            android:scaleType="centerInside"
+            android:src="@drawable/options_title" >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:contentDescription="@string/optionsSoundDescription"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/options_sounds" >
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:contentDescription="@string/optionsAnimationDescription"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/options_animation" >
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:contentDescription="@string/optionsVibrationDescription"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/options_vibration" >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/optionSoundButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/optionMuteDescription"
+                    android:src="@drawable/option_on" />
+
+                <ImageButton
+                    android:id="@+id/optionAnimationButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/optionAnimationCloseDescription"
+                    android:src="@drawable/option_off" />
+
+                <ImageButton
+                    android:id="@+id/optionVibrationButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/optionVibrationCloseDescription"
+                    android:src="@drawable/option_on" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/optionsMenuBackButton"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|left|fill_vertical"
+            android:layout_weight="0.19"
+            android:background="@null"
+            android:contentDescription="@string/optionsMenuBackButtonDescription"
+            android:src="@drawable/options_back_button" >
+        </ImageButton>
+    </LinearLayout>
+
+</LinearLayout>
